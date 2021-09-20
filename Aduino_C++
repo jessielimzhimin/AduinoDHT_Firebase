@@ -41,8 +41,8 @@ void setup() {
   Serial.println();
   config_data.host = FIREBASE_HOST;
   config_data.api_key = API_KEY;
-  auth.user.email = "jessielimzhimin@hotmail.com";
-  auth.user.password = "Jessielim0905$";
+  auth.user.email = ""; //email address that connected with the firebase
+  auth.user.password = ""; //password
   Firebase.begin(&config_data, &auth );
   Firebase.reconnectWiFi(true);
   Firebase.setReadTimeout(fbdo, 60000);
@@ -61,7 +61,7 @@ void loop() {
   /*float t = random(25,50);*/
   float t = dht.readTemperature();
   float f = dht.readTemperature(true);
-  int t1= map(t, 0, 50, 500, 3000);
+  int t1= map(t, 0, 50, 500, 3000); //to increase the value
   if ( isnan(t) ) {
     Serial.println(F("Failed to read from DHT sensor!"));
     return;

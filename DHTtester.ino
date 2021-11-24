@@ -6,8 +6,8 @@
 FirebaseData fbdo;
 FirebaseConfig config_data;
 FirebaseAuth auth;
-const char* ssid ="Jessie";
-const char* password="1234567890";
+const char* ssid ="";
+const char* password="";
 #define FIREBASE_HOST "https://iotcam-default-rtdb.firebaseio.com/"
 #define API_KEY "AIzaSyBAIiMGuwp7X5y-gIGYWSEe4z-M2pAO3Yc"
 
